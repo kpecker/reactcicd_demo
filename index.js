@@ -1,5 +1,4 @@
 const express = require('express')
-const { json } = require('express/lib/response')
 const app = express()
 const port = 9999
 
