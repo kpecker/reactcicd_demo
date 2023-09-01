@@ -1,4 +1,5 @@
 const express = require('express')
+const { json } = require('express/lib/response')
 const app = express()
 const port = 9999
 
@@ -26,6 +27,11 @@ app.get('/', (req, res) => {
       "bs": "harness real-time e-markets"
     }
   })
+})
+
+app.get('/test', (req, res) => {
+    return res.json({
+        "id": 1})
 })
 
 app.listen(port, () => {
