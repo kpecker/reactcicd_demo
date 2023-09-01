@@ -28,6 +28,11 @@ app.get('/', (req, res) => {
   })
 })
 
+app.get('/test', (req, res) => {
+    return res.json({
+        "id": 1})
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
